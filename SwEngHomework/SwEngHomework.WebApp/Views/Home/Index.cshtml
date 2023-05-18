@@ -1,4 +1,5 @@
-﻿@{
+@model SwEngHomework.WebApp.Models.HomeViewModel
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -8,10 +9,10 @@
     <hr /> 
     
     <div>
-        <h4> <i>DateTime goes here!</i> </h4>
+        <h4> <i>@Model.CurrentDate</i> </h4>
     </div>
 
-    <i>Link goes here when the minute is event.</i>
+    <i><a href="/Other/EvenMinute">Other Even Minute</a></i>
 
     <hr />
     <div>
