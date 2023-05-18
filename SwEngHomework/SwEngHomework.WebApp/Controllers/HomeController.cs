@@ -1,5 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using SwEngHomework.WebApp.Models;
+
 using System.Diagnostics;
 
 namespace SwEngHomework.WebApp.Controllers
@@ -13,9 +14,9 @@ namespace SwEngHomework.WebApp.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(HomeViewModel viewModel)
         {
-            return View();
+            return View(viewModel);
         }
 
         public IActionResult Privacy()
